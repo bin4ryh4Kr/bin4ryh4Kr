@@ -1,55 +1,73 @@
-<svg width="1000" height="350" xmlns="http://www.w3.org/2000/svg">
+<svg width="1000" height="420" viewBox="0 0 1000 420" xmlns="http://www.w3.org/2000/svg">
 
-<rect width="100%" height="100%" fill="#050505"/>
+  <rect width="100%" height="100%" fill="#050505"/>
 
-<text
-x="50%"
-y="90"
-fill="#00ff41"
-font-size="38"
-font-family="monospace"
-text-anchor="middle">
-BIN4RYH4KR // TCOTTLE.OS
-</text>
+  <defs>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
 
-<text
-x="50%"
-y="150"
-fill="#00ff41"
-font-size="20"
-font-family="monospace"
-text-anchor="middle">
-INITIALIZING DIGITAL WORKSPACE...
-</text>
+  <style>
+    .terminal {
+      font-family: 'Courier New', monospace;
+      fill: #00ff41;
+      filter: url(#glow);
+    }
 
-<text
-x="50%"
-y="190"
-fill="#00ff41"
-font-size="20"
-font-family="monospace"
-text-anchor="middle">
-AI MODULES ........ ONLINE
-</text>
+    .title {
+      font-size: 52px;
+      font-weight: bold;
+    }
 
-<text
-x="50%"
-y="230"
-fill="#00ff41"
-font-size="20"
-font-family="monospace"
-text-anchor="middle">
-SECURITY LAYER .... ACTIVE
-</text>
+    .line {
+      font-size: 24px;
+    }
 
-<text
-x="50%"
-y="270"
-fill="#00ff41"
-font-size="20"
-font-family="monospace"
-text-anchor="middle">
-SYSTEM READY_
-</text>
+    .cursor {
+      animation: blink 1s steps(2) infinite;
+    }
+
+    @keyframes blink {
+      50% { opacity: 0; }
+    }
+  </style>
+
+  <text x="50%" y="80" text-anchor="middle" class="terminal title">
+    TCOTTLE.OS
+  </text>
+
+  <text x="70" y="150" class="terminal line">
+    &gt; Booting Kernel...
+  </text>
+
+  <text x="70" y="185" class="terminal line">
+    &gt; Initializing AI Core...
+  </text>
+
+  <text x="70" y="220" class="terminal line">
+    &gt; Connecting Local Models...
+  </text>
+
+  <text x="70" y="255" class="terminal line">
+    &gt; Starting MCP Services...
+  </text>
+
+  <text x="70" y="290" class="terminal line">
+    &gt; Authenticating Operator...
+  </text>
+
+  <text x="70" y="340" class="terminal line">
+    Welcome back, Thomas.
+  </text>
+
+  <text x="70" y="380" class="terminal line">
+    There's No Place Like 127.0.0.1
+    <tspan class="cursor">█</tspan>
+  </text>
 
 </svg>
