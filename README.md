@@ -76,8 +76,6 @@ STATUS:
 
 # 📜 THE BUILDER'S PROTOCOL
 
-<div align="center">
-
 ```text
 OUR PROMISE
 
@@ -93,8 +91,6 @@ We will never make beginners feel small.
 
 We will leave every learner more confident than when they arrived.
 ```
-
-</div>
 
 ---
 
