@@ -32,12 +32,6 @@ IDENTITY:
   handle: bin4ryh4Kr
   system: TCOTTLE.OS
 
-
-CLASS:
-
-  Systems Architect
-
-
 ROLES:
 
   - AI Builder
@@ -45,10 +39,6 @@ ROLES:
   - Security Researcher
   - Reverse Engineer
   - UX Engineer
-
-LOCATION:
-  - North Carolina, USA
-
 
 MISSION:
 
@@ -59,14 +49,23 @@ MISSION:
 
 ENVIRONMENT:
 
-  Hardware: Apple Silicon
-  OS: macOS
-  Runtime: Local AI + Cloud Hybrid
+  MACHINES:
 
-  Hardware: Dell Latitude 3440
-  OS: BlackArch Linux
-  Runtime: Local AI + Cloud Hybird
+    PRIMARY:
+      Hardware: Apple Silicon MacBook Pro
+      OS: macOS
+      Runtime: Local AI + Cloud Hybrid
 
+    SECURITY:
+      Hardware: Dell Latitude 3440
+      OS: BlackArch Linux
+      Runtime: Security Research Environment
+
+
+  RUNTIME:
+
+    Local AI: ACTIVE
+    Cloud AI: CONNECTED
 
 STATUS:
 
