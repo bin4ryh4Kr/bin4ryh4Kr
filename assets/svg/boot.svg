@@ -1,102 +1,217 @@
-<svg width="900" height="620" viewBox="0 0 900 620" xmlns="http://www.w3.org/2000/svg">
+<svg width="900" height="650" viewBox="0 0 900 650" xmlns="http://www.w3.org/2000/svg">
 
 <defs>
 
-<filter id="glow">
-<feGaussianBlur stdDeviation="2" result="blur"/>
-<feMerge>
-<feMergeNode in="blur"/>
-<feMergeNode in="SourceGraphic"/>
-</feMerge>
-</filter>
+    <filter id="glow">
+        <feGaussianBlur stdDeviation="2" result="blur"/>
+        <feMerge>
+            <feMergeNode in="blur"/>
+            <feMergeNode in="SourceGraphic"/>
+        </feMerge>
+    </filter>
 
 </defs>
 
+
 <rect width="100%" height="100%" fill="#050505"/>
+
 
 <style>
 
 text {
-fill:#00ff41;
-font-family:"Fira Code", monospace;
-filter:url(#glow);
+    fill:#00ff41;
+    font-family:"Fira Code", "Courier New", monospace;
+    filter:url(#glow);
 }
 
 .title {
-font-size:50px;
-font-weight:bold;
+    font-size:50px;
+    font-weight:bold;
 }
 
 .line {
-font-size:24px;
+    font-size:24px;
 }
 
 .small {
-font-size:20px;
-}
-
-.cursor {
-animation:blink 1s steps(2) infinite;
-}
-
-@keyframes blink {
-50% { opacity:0; }
+    font-size:20px;
 }
 
 </style>
 
 
+<!-- SYSTEM TITLE -->
+
 <text x="450" y="60" text-anchor="middle" class="title">
 TCOTTLE.OS
+
+<animate
+attributeName="opacity"
+values="0;1"
+dur="1s"
+begin="0s"
+fill="freeze"/>
+
 </text>
 
 
-<text x="40" y="115" class="line">
+<!-- BOOT SEQUENCE -->
+
+<text x="40" y="120" class="line">
 [ OK ] Initializing Kernel
+
+<animate
+attributeName="opacity"
+values="0;1"
+dur="0.5s"
+begin="0.5s"
+fill="freeze"/>
+
 </text>
 
-<text x="40" y="155" class="line">
+
+<text x="40" y="160" class="line">
 [ OK ] Loading AI Core
+
+<animate
+attributeName="opacity"
+values="0;1"
+dur="0.5s"
+begin="1s"
+fill="freeze"/>
+
 </text>
 
-<text x="40" y="195" class="line">
+
+<text x="40" y="200" class="line">
 [ OK ] Connecting Local Models
+
+<animate
+attributeName="opacity"
+values="0;1"
+dur="0.5s"
+begin="1.5s"
+fill="freeze"/>
+
 </text>
 
-<text x="40" y="235" class="line">
+
+<text x="40" y="240" class="line">
 [ OK ] Starting MCP Services
+
+<animate
+attributeName="opacity"
+values="0;1"
+dur="0.5s"
+begin="2s"
+fill="freeze"/>
+
 </text>
 
-<text x="40" y="275" class="line">
+
+<text x="40" y="280" class="line">
 [ OK ] Authenticating Operator
+
+<animate
+attributeName="opacity"
+values="0;1"
+dur="0.5s"
+begin="2.5s"
+fill="freeze"/>
+
 </text>
 
-<text x="40" y="335" class="line">
+
+<!-- IDENTITY MODULES -->
+
+
+<text x="40" y="340" class="line">
 [ OK ] AI Builder ........ ONLINE
+
+<animate
+attributeName="fill"
+values="#003300;#00ff41;#003300"
+dur="2s"
+repeatCount="indefinite"/>
+
 </text>
 
-<text x="40" y="375" class="line">
+
+<text x="40" y="380" class="line">
 [ OK ] Security Researcher .. ACTIVE
+
+<animate
+attributeName="fill"
+values="#003300;#00ff41;#003300"
+dur="2s"
+repeatCount="indefinite"/>
+
 </text>
 
-<text x="40" y="415" class="line">
+
+<text x="40" y="420" class="line">
 [ OK ] Reverse Engineer ... ACTIVE
+
+<animate
+attributeName="fill"
+values="#003300;#00ff41;#003300"
+dur="2s"
+repeatCount="indefinite"/>
+
 </text>
 
-<text x="40" y="455" class="line">
+
+<text x="40" y="460" class="line">
 [ OK ] UX Engineering ...... READY
+
+<animate
+attributeName="fill"
+values="#003300;#00ff41;#003300"
+dur="2s"
+repeatCount="indefinite"/>
+
 </text>
 
-<text x="40" y="495" class="line">
+
+<text x="40" y="500" class="line">
 [ OK ] Ada Interface ........ READY
+
+<animate
+attributeName="fill"
+values="#003300;#00ff41;#003300"
+dur="2s"
+repeatCount="indefinite"/>
+
 </text>
 
-<text x="40" y="540" class="small">
+
+<!-- OPERATOR -->
+
+<text x="40" y="555" class="small">
 OPERATOR: Thomas Cottle // bin4ryh4Kr
+
+<animate
+attributeName="opacity"
+values="0;1"
+dur="1s"
+begin="3.5s"
+fill="freeze"/>
+
 </text>
 
-<text x="40" y="590" class="small">
-127.0.0.1 // HOME DIRECTORY FOUND <tspan class="cursor">█</tspan>
+
+<!-- FINAL SYSTEM MESSAGE -->
+
+<text x="40" y="610" class="small">
+
+127.0.0.1 // HOME DIRECTORY FOUND
+
+<animate
+attributeName="opacity"
+values="1;0.3;1"
+dur="1.2s"
+repeatCount="indefinite"/>
+
 </text>
 
 
