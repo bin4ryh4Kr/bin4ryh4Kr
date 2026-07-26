@@ -20,6 +20,7 @@
 
 ---
 
+```
 CORE:
   TypeScript
   JavaScript
@@ -49,12 +50,12 @@ AI SYSTEMS:
   Local LLMs
   MCP
   AI Agents
-
+```
 ---
 
 # ⚡ Operating Philosophy
 
-```
+
 Build with humility.
 Ship with confidence.
 Learn without end.
@@ -65,6 +66,7 @@ The master asks what if.
 ```
 ---
 
+```
 IDENTITY:
   Name: Thomas Cottle
   Handle: bin4ryh4Kr
@@ -111,7 +113,7 @@ PHILOSOPHY:
 
 ## 🧬 Origin Protocol
 
-```text
+
 Started with hardware.
 
 Moved into software.
@@ -129,7 +131,7 @@ Understand.
 
 ## 🛡️ Cyber Lab
 
-```text
+```
 ~/lab
 
 ├── reverse-engineering
@@ -182,7 +184,7 @@ ___
 
 # 🚀 Mission Archive
 
-```text
+```
 001 │ TCOTTLE WEB DESIGNS
     │ Premium websites engineered for businesses
     │ STATUS: LIVE
@@ -207,7 +209,7 @@ ___
 
 # 📡 Final Transmission
 
-```text
+```
 127.0.0.1 // HOME DIRECTORY FOUND
 
 The system is local.
