@@ -18,7 +18,7 @@
 
 text {
 fill:#00ff41;
-font-family:Fira Code,
+font-family:"Fira Code", monospace;
 filter:url(#glow);
 }
 
@@ -87,11 +87,15 @@ TCOTTLE.OS
 [ OK ] UX Engineering ...... READY
 </text>
 
-<text x="40" y="520" class="small">
+<text x="40" y="495" class="line">
+[ OK ] Ada Interface ........ READY
+</text>
+
+<text x="40" y="540" class="small">
 OPERATOR: Thomas Cottle // bin4ryh4Kr
 </text>
 
-<text x="40" y="580" class="small">
+<text x="40" y="590" class="small">
 127.0.0.1 // HOME DIRECTORY FOUND <tspan class="cursor">█</tspan>
 </text>
 
