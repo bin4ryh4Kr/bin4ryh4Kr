@@ -4,11 +4,12 @@
 
 <br>
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=22&pause=700&color=00FF41&center=true&vCenter=true&width=850&lines=AI+Builder;Security+Researcher;Automation+Engineer;Reverse+Engineering;There+is+no+place+like+127.0.0.1">
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=22&pause=700&color=00FF41&center=true&vCenter=true&width=850&lines=AI+Builder;Security+Researcher;Automation+Engineer;Reverse+Engineering;Thinker;There+is+no+place+like+127.0.0.1">
 
 </div>
 
 ---
+
 
 # ⚙️ Arsenal
 
@@ -17,8 +18,6 @@
 <img src="https://skillicons.dev/icons?i=apple,ts,js,react,nextjs,tailwind,vite,python,nodejs,docker,linux,lua,git,github,cloudflare,vercel,vscode&theme=dark">
 
 </div>
-
----
 
 ```
 CORE:
@@ -55,7 +54,7 @@ AI SYSTEMS:
 
 # ⚡ Operating Philosophy
 
-
+```
 Build with humility.
 Ship with confidence.
 Learn without end.
@@ -108,12 +107,13 @@ PHILOSOPHY:
   Improve the system.
   Build the next system.
 
-  root@TCOTTLE.OS:~$The goal is not to follow technology. The goal is to understand it deeply enough to create what comes next.
+  root@TCOTTLE.OS:~$The goal is not to follow technology.
+            The goal is to understand it deeply enough to create what comes next.
 ```
 
 ## 🧬 Origin Protocol
 
-
+```
 Started with hardware.
 
 Moved into software.
@@ -226,8 +226,14 @@ Connection remains active_
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=bin4ryh4Kr&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" />
+<img src="https://streak-stats.demolab.com?user=bin4ryh4Kr&theme=tokyonight&hide_border=true"/>
 
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=bin4ryh4Kr&layout=compact&theme=tokyonight&hide_border=true" />
+</div>
+
+---
+
+<div align="center">
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=bin4ryh4Kr&theme=tokyo-night&hide_border=true"/>
 
 </div>
