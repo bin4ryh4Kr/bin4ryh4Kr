@@ -1,14 +1,14 @@
-<svg width="900" height="650" viewBox="0 0 900 650" xmlns="http://www.w3.org/2000/svg">
+<svg width="900" height="750" viewBox="0 0 900 750" xmlns="http://www.w3.org/2000/svg">
 
 <defs>
 
-    <filter id="glow">
-        <feGaussianBlur stdDeviation="2" result="blur"/>
-        <feMerge>
-            <feMergeNode in="blur"/>
-            <feMergeNode in="SourceGraphic"/>
-        </feMerge>
-    </filter>
+<filter id="glow">
+  <feGaussianBlur stdDeviation="2" result="blur"/>
+  <feMerge>
+    <feMergeNode in="blur"/>
+    <feMergeNode in="SourceGraphic"/>
+  </feMerge>
+</filter>
 
 </defs>
 
@@ -19,22 +19,37 @@
 <style>
 
 text {
-    fill:#00ff41;
-    font-family:"Fira Code", "Courier New", monospace;
-    filter:url(#glow);
+  fill:#00ff41;
+  font-family:"Fira Code", monospace;
+  filter:url(#glow);
 }
 
 .title {
-    font-size:50px;
-    font-weight:bold;
+  font-size:52px;
+  font-weight:bold;
 }
 
 .line {
-    font-size:24px;
+  font-size:24px;
 }
 
 .small {
-    font-size:20px;
+  font-size:20px;
+}
+
+.role {
+  font-size:28px;
+  font-weight:bold;
+}
+
+.cursor {
+  animation:blink 1s steps(2) infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity:0;
+  }
 }
 
 </style>
@@ -42,177 +57,168 @@ text {
 
 <!-- SYSTEM TITLE -->
 
-<text x="450" y="60" text-anchor="middle" class="title">
+<text 
+x="450"
+y="65"
+text-anchor="middle"
+class="title">
 TCOTTLE.OS
-
-<animate
-attributeName="opacity"
-values="0;1"
-dur="1s"
-begin="0s"
-fill="freeze"/>
-
 </text>
 
 
 <!-- BOOT SEQUENCE -->
 
-<text x="40" y="120" class="line">
+<text x="40" y="130" class="line">
 [ OK ] Initializing Kernel
 
 <animate
 attributeName="opacity"
-values="0;1"
+from="0"
+to="1"
 dur="0.5s"
-begin="0.5s"
+begin="0s"
 fill="freeze"/>
-
 </text>
 
 
-<text x="40" y="160" class="line">
+<text x="40" y="175" class="line">
 [ OK ] Loading AI Core
 
 <animate
 attributeName="opacity"
-values="0;1"
+from="0"
+to="1"
 dur="0.5s"
-begin="1s"
+begin="0.6s"
 fill="freeze"/>
-
 </text>
 
 
-<text x="40" y="200" class="line">
+<text x="40" y="220" class="line">
 [ OK ] Connecting Local Models
 
 <animate
 attributeName="opacity"
-values="0;1"
+from="0"
+to="1"
 dur="0.5s"
-begin="1.5s"
+begin="1.2s"
 fill="freeze"/>
-
 </text>
 
 
-<text x="40" y="240" class="line">
+<text x="40" y="265" class="line">
 [ OK ] Starting MCP Services
 
 <animate
 attributeName="opacity"
-values="0;1"
+from="0"
+to="1"
 dur="0.5s"
-begin="2s"
+begin="1.8s"
 fill="freeze"/>
-
 </text>
 
 
-<text x="40" y="280" class="line">
+<text x="40" y="310" class="line">
 [ OK ] Authenticating Operator
 
 <animate
 attributeName="opacity"
-values="0;1"
+from="0"
+to="1"
 dur="0.5s"
-begin="2.5s"
+begin="2.4s"
 fill="freeze"/>
-
 </text>
 
 
-<!-- IDENTITY MODULES -->
+
+<!-- CORE IDENTITY -->
+
+<text x="40" y="370" class="line">
+[ OK ] Cognitive Core ........ ONLINE
+</text>
+
+<text x="40" y="410" class="line">
+[ OK ] Thinker ............... ACTIVE
+</text>
+
+<text x="40" y="450" class="line">
+[ OK ] AI Builder ............ ONLINE
+</text>
+
+<text x="40" y="490" class="line">
+[ OK ] Systems Architect ..... READY
+</text>
+
+<text x="40" y="530" class="line">
+[ OK ] Full Stack Developer .. ACTIVE
+</text>
+
+<text x="40" y="570" class="line">
+[ OK ] Security Researcher ... ACTIVE
+</text>
+
+<text x="40" y="610" class="line">
+[ OK ] Reverse Engineer ...... ACTIVE
+</text>
+
+<!-- SCROLLING IDENTITY MODULE -->
+
+<clipPath id="roleWindow">
+  <rect x="0" y="630" width="900" height="50"/>
+</clipPath>
 
 
-<text x="40" y="340" class="line">
-[ OK ] AI Builder ........ ONLINE
+<g clip-path="url(#roleWindow)">
+
+<text
+x="900"
+y="665"
+class="role">
+
+THINKER // AI BUILDER // SYSTEMS ARCHITECT // FULL STACK DEVELOPER // SECURITY RESEARCHER // REVERSE ENGINEER // UX ENGINEER // AUTOMATION ARCHITECT // LOCAL AI ENGINEER
 
 <animate
-attributeName="fill"
-values="#003300;#00ff41;#003300"
-dur="2s"
+attributeName="x"
+from="900"
+to="-1800"
+dur="35s"
 repeatCount="indefinite"/>
 
 </text>
 
+</g>
 
-<text x="40" y="380" class="line">
-[ OK ] Security Researcher .. ACTIVE
+<!-- TERMINAL FOOTER -->
 
-<animate
-attributeName="fill"
-values="#003300;#00ff41;#003300"
-dur="2s"
-repeatCount="indefinite"/>
-
-</text>
-
-
-<text x="40" y="420" class="line">
-[ OK ] Reverse Engineer ... ACTIVE
-
-<animate
-attributeName="fill"
-values="#003300;#00ff41;#003300"
-dur="2s"
-repeatCount="indefinite"/>
-
-</text>
-
-
-<text x="40" y="460" class="line">
-[ OK ] UX Engineering ...... READY
-
-<animate
-attributeName="fill"
-values="#003300;#00ff41;#003300"
-dur="2s"
-repeatCount="indefinite"/>
-
-</text>
-
-
-<text x="40" y="500" class="line">
-[ OK ] Ada Interface ........ READY
-
-<animate
-attributeName="fill"
-values="#003300;#00ff41;#003300"
-dur="2s"
-repeatCount="indefinite"/>
-
-</text>
-
-
-<!-- OPERATOR -->
-
-<text x="40" y="555" class="small">
-OPERATOR: Thomas Cottle // bin4ryh4Kr
-
-<animate
-attributeName="opacity"
-values="0;1"
-dur="1s"
-begin="3.5s"
-fill="freeze"/>
-
-</text>
-
-
-<!-- FINAL SYSTEM MESSAGE -->
-
-<text x="40" y="610" class="small">
-
+<text x="40" y="710" class="small">
 127.0.0.1 // HOME DIRECTORY FOUND
-
-<animate
-attributeName="opacity"
-values="1;0.3;1"
-dur="1.2s"
-repeatCount="indefinite"/>
-
+<tspan class="cursor">█</tspan>
 </text>
 
 
 </svg>
+
+<!--
+TCOTTLE.OS BOOT INTERFACE
+
+The first attempt at a forever evolving system.
+
+Every builder starts somewhere.
+Every expert was once a beginner.
+
+Ask questions.
+Break things.
+Learn.
+Rebuild.
+
+The only bad question is the one never asked.
+
+No one can make you feel inferior without your permission.
+
+Happy Coding.
+
+- T. Cottle
+-->
