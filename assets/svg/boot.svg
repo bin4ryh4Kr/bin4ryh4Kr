@@ -1,4 +1,4 @@
-<svg width="900" height="520" viewBox="0 0 900 520" xmlns="http://www.w3.org/2000/svg">
+<svg width="900" height="620" viewBox="0 0 900 620" xmlns="http://www.w3.org/2000/svg">
 
 <defs>
 
@@ -18,7 +18,7 @@
 
 text {
 fill:#00ff41;
-font-family:monospace;
+font-family:Fira Code,
 filter:url(#glow);
 }
 
@@ -46,45 +46,53 @@ animation:blink 1s steps(2) infinite;
 </style>
 
 
-<text x="500" y="70" text-anchor="middle" class="title">
+<text x="450" y="60" text-anchor="middle" class="title">
 TCOTTLE.OS
 </text>
 
 
-<text x="50" y="135" class="line">
+<text x="40" y="115" class="line">
 [ OK ] Initializing Kernel
 </text>
 
-<text x="50" y="175" class="line">
+<text x="40" y="155" class="line">
 [ OK ] Loading AI Core
 </text>
 
-<text x="50" y="215" class="line">
+<text x="40" y="195" class="line">
 [ OK ] Connecting Local Models
 </text>
 
-<text x="50" y="255" class="line">
+<text x="40" y="235" class="line">
 [ OK ] Starting MCP Services
 </text>
 
-<text x="50" y="295" class="line">
+<text x="40" y="275" class="line">
 [ OK ] Authenticating Operator
 </text>
 
-<text x="50" y="335" class="line">
+<text x="40" y="335" class="line">
 [ OK ] AI Builder ........ ONLINE
 </text>
 
-<text x="50" y="375" class="line">
+<text x="40" y="375" class="line">
 [ OK ] Security Researcher .. ACTIVE
 </text>
 
-<text x="50" y="415" class="line">
+<text x="40" y="415" class="line">
 [ OK ] Reverse Engineer ... ACTIVE
 </text>
 
-<text x="50" y="475" class="line">
-127.0.0.1 // HOME DIRECTORY FOUND<tspan class="cursor">█</tspan>
+<text x="40" y="455" class="line">
+[ OK ] UX Engineering ...... READY
+</text>
+
+<text x="40" y="520" class="small">
+OPERATOR: Thomas Cottle // bin4ryh4Kr
+</text>
+
+<text x="40" y="580" class="small">
+127.0.0.1 // HOME DIRECTORY FOUND <tspan class="cursor">█</tspan>
 </text>
 
 
