@@ -46,12 +46,15 @@ ROLES:
   - Reverse Engineer
   - UX Engineer
 
+LOCATION:
+  - North Carolina, USA
+
 
 MISSION:
 
-  Build intelligent systems.
-  Automate workflows.
-  Create technology people enjoy using.
+  - Build intelligent systems
+  - Automate workflows
+  - Create technology people enjoy using
 
 
 ENVIRONMENT:
@@ -70,52 +73,6 @@ STATUS:
   Learning: ACTIVE
   Building: ACTIVE
   Shipping: ACTIVE
-```
-
----
-
-# 📜 THE BUILDER'S PROTOCOL
-
-```text
-OUR PROMISE
-
-We will explain before we instruct.
-
-We will understand before we optimize.
-
-We will verify before we trust.
-
-We will welcome questions.
-
-We will never make beginners feel small.
-
-We will leave every learner more confident than when they arrived.
-```
-
----
-
-# ⚒️ THE BUILDERS CREED
-
-```text
-We will explain before we impress.
-
-We will simplify without oversimplifying.
-
-We will admit when we don't know.
-
-We will test before we teach.
-
-We will update when we learn.
-
-We will welcome beginners.
-
-We will challenge experts.
-
-We will leave every reader more confident than when they arrived.
-
-BUILD NOT FOR APPLAUSE...
-
-BUILD FOR UNDERSTANDING....
 ```
 
 ---
@@ -145,12 +102,8 @@ SYSTEM_CORE:
     - Bash
     - Lua
     - SQL
-    - C
-    - C++
 
   DEVELOPMENT:
-    - Git
-    - GitHub
     - VS Code
     - Terminal
     - REST APIs
@@ -215,6 +168,7 @@ MODELS
 Qwen ................ LOADED
 Mistral ............. READY
 DeepSeek ............ AVAILABLE
+Dolphin ............. AVAILABLE
 
 AGENT FRAMEWORK
 
@@ -316,15 +270,6 @@ ENVIRONMENT:
 STATUS:
     BUILDING THE FUTURE_
 ```
----
-
-# 🐍 ACTIVITY TRACE
-
-<div align="center">
-
-<img src="https://raw.githubusercontent.com/bin4ryh4Kr/bin4ryh4Kr/output/github-contribution-grid-snake-dark.svg">
-
-</div>
 
 ---
 
