@@ -1,73 +1,137 @@
-<svg width="1000" height="420" viewBox="0 0 1000 420" xmlns="http://www.w3.org/2000/svg">
-
-  <rect width="100%" height="100%" fill="#050505"/>
+<svg width="1000" height="520" viewBox="0 0 1000 520" xmlns="http://www.w3.org/2000/svg">
 
   <defs>
+
+    <linearGradient id="bg" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#040404"/>
+      <stop offset="100%" stop-color="#090909"/>
+    </linearGradient>
+
     <filter id="glow">
-      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feGaussianBlur stdDeviation="2" result="blur"/>
       <feMerge>
         <feMergeNode in="blur"/>
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
     </filter>
+
   </defs>
 
+  <rect width="100%" height="100%" fill="url(#bg)"/>
+
+  <!-- Scanlines -->
+
+  <g opacity=".05">
+
+    <path d="M0 10 H1000"/>
+    <path d="M0 20 H1000"/>
+    <path d="M0 30 H1000"/>
+    <path d="M0 40 H1000"/>
+    <path d="M0 50 H1000"/>
+    <path d="M0 60 H1000"/>
+    <path d="M0 70 H1000"/>
+    <path d="M0 80 H1000"/>
+
+  </g>
+
   <style>
-    .terminal {
-      font-family: 'Courier New', monospace;
-      fill: #00ff41;
-      filter: url(#glow);
+
+    text{
+
+      fill:#00ff41;
+
+      font-family:monospace;
+
+      filter:url(#glow);
+
     }
 
-    .title {
-      font-size: 52px;
-      font-weight: bold;
+    .title{
+
+      font-size:54px;
+
+      font-weight:bold;
+
     }
 
-    .line {
-      font-size: 24px;
+    .line{
+
+      font-size:24px;
+
     }
 
-    .cursor {
-      animation: blink 1s steps(2) infinite;
+    .small{
+
+      font-size:20px;
+
     }
 
-    @keyframes blink {
-      50% { opacity: 0; }
+    .cursor{
+
+      animation:blink 1s steps(2) infinite;
+
     }
+
+    @keyframes blink{
+
+      50%{opacity:0;}
+
+    }
+
   </style>
 
-  <text x="50%" y="80" text-anchor="middle" class="terminal title">
-    TCOTTLE.OS
+  <text x="500" y="70" text-anchor="middle" class="title">
+
+TCOTTLE.OS
+
   </text>
 
-  <text x="70" y="150" class="terminal line">
-    &gt; Booting Kernel...
+  <text x="50" y="135" class="line">
+
+[ OK ] Initializing Kernel
+
   </text>
 
-  <text x="70" y="185" class="terminal line">
-    &gt; Initializing AI Core...
+  <text x="50" y="175" class="line">
+
+[ OK ] Loading AI Core
+
   </text>
 
-  <text x="70" y="220" class="terminal line">
-    &gt; Connecting Local Models...
+  <text x="50" y="215" class="line">
+
+[ OK ] Connecting Ollama Runtime
+
   </text>
 
-  <text x="70" y="255" class="terminal line">
-    &gt; Starting MCP Services...
+  <text x="50" y="255" class="line">
+
+[ OK ] Mounting Local Models
+
   </text>
 
-  <text x="70" y="290" class="terminal line">
-    &gt; Authenticating Operator...
+  <text x="50" y="295" class="line">
+
+[ OK ] Starting MCP Services
+
   </text>
 
-  <text x="70" y="340" class="terminal line">
-    Welcome back, Thomas.
+  <text x="50" y="335" class="line">
+
+[ OK ] Authenticating Operator
+
   </text>
 
-  <text x="70" y="380" class="terminal line">
-    There's No Place Like 127.0.0.1
-    <tspan class="cursor">█</tspan>
+  <text x="50" y="390" class="small">
+
+Welcome back, Thomas Cottle
+
+  </text>
+
+  <text x="50" y="425" class="small">
+
+There's No Place Like 127.0.0.1<tspan class="cursor">█</tspan>
+
   </text>
 
 </svg>
