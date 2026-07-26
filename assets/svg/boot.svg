@@ -1,137 +1,93 @@
-<svg width="1000" height="520" viewBox="0 0 1000 520" xmlns="http://www.w3.org/2000/svg">
+<svg width="1000" height="460" viewBox="0 0 1000 460" xmlns="http://www.w3.org/2000/svg">
 
-  <defs>
+<defs>
 
-    <linearGradient id="bg" x1="0" x2="0" y1="0" y2="1">
-      <stop offset="0%" stop-color="#040404"/>
-      <stop offset="100%" stop-color="#090909"/>
-    </linearGradient>
+<filter id="glow">
+<feGaussianBlur stdDeviation="2" result="blur"/>
+<feMerge>
+<feMergeNode in="blur"/>
+<feMergeNode in="SourceGraphic"/>
+</feMerge>
+</filter>
 
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="2" result="blur"/>
-      <feMerge>
-        <feMergeNode in="blur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
+</defs>
 
-  </defs>
+<rect width="100%" height="100%" fill="#050505"/>
 
-  <rect width="100%" height="100%" fill="url(#bg)"/>
+<style>
 
-  <!-- Scanlines -->
+text {
+fill:#00ff41;
+font-family:monospace;
+filter:url(#glow);
+}
 
-  <g opacity=".05">
+.title {
+font-size:54px;
+font-weight:bold;
+}
 
-    <path d="M0 10 H1000"/>
-    <path d="M0 20 H1000"/>
-    <path d="M0 30 H1000"/>
-    <path d="M0 40 H1000"/>
-    <path d="M0 50 H1000"/>
-    <path d="M0 60 H1000"/>
-    <path d="M0 70 H1000"/>
-    <path d="M0 80 H1000"/>
+.line {
+font-size:24px;
+}
 
-  </g>
+.small {
+font-size:20px;
+}
 
-  <style>
+.cursor {
+animation:blink 1s steps(2) infinite;
+}
 
-    text{
+@keyframes blink {
+50% { opacity:0; }
+}
 
-      fill:#00ff41;
+</style>
 
-      font-family:monospace;
 
-      filter:url(#glow);
-
-    }
-
-    .title{
-
-      font-size:54px;
-
-      font-weight:bold;
-
-    }
-
-    .line{
-
-      font-size:24px;
-
-    }
-
-    .small{
-
-      font-size:20px;
-
-    }
-
-    .cursor{
-
-      animation:blink 1s steps(2) infinite;
-
-    }
-
-    @keyframes blink{
-
-      50%{opacity:0;}
-
-    }
-
-  </style>
-
-  <text x="500" y="70" text-anchor="middle" class="title">
-
+<text x="500" y="70" text-anchor="middle" class="title">
 TCOTTLE.OS
+</text>
 
-  </text>
 
-  <text x="50" y="135" class="line">
-
+<text x="50" y="135" class="line">
 [ OK ] Initializing Kernel
+</text>
 
-  </text>
-
-  <text x="50" y="175" class="line">
-
+<text x="50" y="175" class="line">
 [ OK ] Loading AI Core
+</text>
 
-  </text>
+<text x="50" y="215" class="line">
+[ OK ] Connecting Local Models
+</text>
 
-  <text x="50" y="215" class="line">
-
-[ OK ] Connecting Ollama Runtime
-
-  </text>
-
-  <text x="50" y="255" class="line">
-
-[ OK ] Mounting Local Models
-
-  </text>
-
-  <text x="50" y="295" class="line">
-
+<text x="50" y="255" class="line">
 [ OK ] Starting MCP Services
+</text>
 
-  </text>
-
-  <text x="50" y="335" class="line">
-
+<text x="50" y="295" class="line">
 [ OK ] Authenticating Operator
+</text>
 
-  </text>
 
-  <text x="50" y="390" class="small">
+<text x="50" y="345" class="line">
+[ OK ] AI Builder ........ ONLINE
+</text>
 
-Welcome back, Thomas Cottle
+<text x="50" y="380" class="line">
+[ OK ] Security Researcher ACTIVE
+</text>
 
-  </text>
+<text x="50" y="415" class="line">
+[ OK ] Reverse Engineer .. ACTIVE
+</text>
 
-  <text x="50" y="425" class="small">
 
-There's No Place Like 127.0.0.1<tspan class="cursor">█</tspan>
+<text x="50" y="450" class="small">
+127.0.0.1 // HOME DIRECTORY FOUND<tspan class="cursor">█</tspan>
+</text>
 
-  </text>
 
 </svg>
